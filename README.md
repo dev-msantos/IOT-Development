@@ -10,6 +10,7 @@ Trabalho final da disciplina de IOT Development pela FIAP.
 <p>Este sistema tem por finalidade demonstrar uma trava eletrônica de uma porta. Onde é digitado uma senha para que a trava seja acionada e porta seja aberta.</p>
 <p>O sistema tem uma inteligência que após a porta esteja aberta, ele espera alguns segundos e fecha a porta novamente de forma automática.</p>
 </div>
+
 ![Projeto TinckerCad](./imgs/project-arduino.png)
 
 ## Link do projeto no Tinkercad <a href="https://www.tinkercad.com/things/gyCDJCO2706?sharecode=VhlBTLhMDpbyTJzEG7gAZHjORP67gvdvIOPeP0emjNA">Trava Eletrônica</a>
