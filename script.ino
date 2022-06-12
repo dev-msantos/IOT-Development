@@ -48,7 +48,58 @@ void setup()
 }
 
 /* Jackson start */
+void loop()
+{
+  if (door == true)
+  {
+    customKey = customKeypad.getKey();
+    if (customKey == '#')
+    {
+      lcd.clear();
+      ServoClose();
+      lcd.print("Porta Fechada");
+      delay(3000);
+      door = false;
+    }
+  }
+  else
+    Open();
+}
 
+void loading (char msg[]) {
+  lcd.setCursor(0, 1);
+  lcd.print(msg);
+
+  for (int i = 0; i < 9; i++) {
+    delay(1000);
+    lcd.print(".");
+  }
+}
+
+void clearData()
+{
+  while (data_count != 0)
+  { 
+    Data[data_count--] = 0;
+  }
+  return;
+}
+
+/* Metodo para fechar a trava */
+void ServoClose()
+{
+  for (pos = 90; pos >= 0; pos -= 10) { 
+    myservo.write(pos);
+  }
+}
+
+/* Metodo para abrir a trava */
+void ServoOpen()
+{
+  for (pos = 0; pos <= 90; pos += 10) {
+    myservo.write(pos);  
+  }
+}
 /* end */
 
 /* Giovana start */
