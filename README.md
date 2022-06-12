@@ -24,3 +24,6 @@ Trabalho final da disciplina de IOT Development pela FIAP.
     <p>1 Resistor 1kΩ</p>
     <p>1 Resistor 220Ω</p>
 </div>
+
+## Circuito
+![Projeto TinckerCad](./imgs/circuito.png)
