@@ -15,6 +15,8 @@ Trabalho final da disciplina de IOT Development pela FIAP.
 
 ## Link do projeto no Tinkercad <a href="https://www.tinkercad.com/things/gyCDJCO2706?sharecode=VhlBTLhMDpbyTJzEG7gAZHjORP67gvdvIOPeP0emjNA">Trava Eletrônica</a>
 
+## Senha para teste 1234
+
 ## Componentes utilizados
 <div>
     <p>1 Arduino Uno R3</p>

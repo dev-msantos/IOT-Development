@@ -47,7 +47,7 @@ void setup()
   lcd.clear();
 }
 
-/* Jackson start */
+
 void loop()
 {
   if (door == true)
@@ -100,7 +100,6 @@ void ServoOpen()
     myservo.write(pos);  
   }
 }
-/* end */
 
 void Open()
 {
