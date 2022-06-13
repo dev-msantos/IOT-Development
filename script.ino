@@ -102,6 +102,44 @@ void ServoOpen()
 }
 /* end */
 
-/* Giovana start */
+void Open()
+{
+  lcd.setCursor(0, 0);
+  lcd.print("Senha:");
+  
+  customKey = customKeypad.getKey();
+  if (customKey)
+  {
+    Data[data_count] = customKey;
+    lcd.setCursor(data_count, 1);
+    lcd.print(Data[data_count]);
+    data_count++;
+  }
 
-/* end */
+  if (data_count == Password_Length - 1)
+  {
+    if (!strcmp(Data, Master))
+    {
+      lcd.clear();
+      ServoOpen();
+      lcd.print(" Porta Aberta ");
+      door = true;
+      delay(5000);
+      loading("Aguardando...");
+      lcd.clear();
+      lcd.print(" Fechando ");
+      delay(1000);
+      ServoClose();
+      door = false;      
+    }
+    else
+    {
+      lcd.clear();
+      lcd.print(" Senha Incorreta ");
+      door = false;
+    }
+    delay(1000);
+    lcd.clear();
+    clearData();
+  }
+}
